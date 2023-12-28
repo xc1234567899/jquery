@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .animatebox{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            opacity: 1;
+        }
+        .delaybox{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <button class="btn">hide</button>
+    <button class="btn2">show</button>
+    <button class="btn3">toggle</button><br>
+    <div class="box1"></div>
+    <button class="bt">sliderup</button>
+    <button class="bt2">sliderdown</button>
+    <button class="bt3">slidertoogle</button><br>
+    <div class="box2"></div>
+    <button class="b">fadeout</button>
+    <button class="b2">fadein</button>
+    <button class="b3">fadetoggle</button>
+    <div class="animatebox"></div>
+    <button class="animatebtn">animate</button>
+    <div class="delaybox"></div>
+    <button class="delaybtn">delay</button>
+    <script>
+        let div = $('.box')
+        let div1 = $('.box1')
+        let div2 = $('.box2')
+        let animatebox = $('.animatebox')
+        let delaybox = $('.delaybox')
+        //显示隐藏
+        let btn = $('.btn')
+        let btn2 = $('.btn2')
+        let btn3 = $('.btn3')
+        //卷帘门效果版
+        let bt = $('.bt')
+        let bt2 = $('.bt2')
+        let bt3 = $('.bt3')
+        //淡入淡出
+        let b = $('.b')
+        let b2 = $('.b2')
+        let b3 = $('.b3')
+        //animate动画
+        let animatebtn = $('.animatebtn')
+        //串行动画
+        let delaybtn = $('.delaybtn')
+        //显示隐藏
+        btn.click(function(){
+            div.hide(2000)
+        })
+        btn2.click(function(){
+            div.show(2000)
+        })
+        btn3.click(function(){
+            div.toggle(2000)
+        })
+        //卷帘门效果版
+        bt.click(function(){
+            div1.slideUp(2000)
+        })
+        bt2.click(function(){
+            div1.slideDown(2000)
+        })
+        bt3.click(function(){
+            div1.slideToggle(2000)
+        })
+        //淡入淡出
+        b.click(function(){
+            div2.fadeOut(2000)
+        })
+        b2.click(function(){
+            div2.fadeIn(2000)
+        })
+        b3.click(function(){
+            div2.fadeToggle(2000)
+        })
+        //animate动画
+        animatebtn.click(function(){
+            animatebox.animate({
+                opacity:0.25,
+                width:'200px',
+                height:'200px'
+            },1000,function(){
+                console.log('动画结束');
+                $(this).css({
+                    width:'100px',
+                    height:'100px',
+                    opacity:1
+                })
+            })
+        })
+        //串行动画
+        delaybtn.click(function(){
+            delaybox.hide()
+            delaybox.slideDown(2000)
+                    .delay(1000)
+                    .animate({
+                        width:'200px',
+                        height:'200px'
+                    },2000)
+                    .delay(1000)
+                    .animate({
+                        width:'100px',
+                        height:'100px'
+                    },2000)
+        })
+    </script>
+</body>
+
+</html>
