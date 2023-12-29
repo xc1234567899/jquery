@@ -74,7 +74,7 @@
         <div class="tab-nav">
             <h3>每日特价</h3>
             <ul>
-                <li><a href="javascript:;">精选</a></li>
+                <li><a href="javascript:;" class="active">精选</a></li>
                 <li><a href="javascript:;">美食</a></li>
                 <li><a href="javascript:;">百货</a></li>
                 <li><a href="javascript:;">个护</a></li>
@@ -95,7 +95,6 @@
             $(this).children('a').addClass('active').parent().siblings().children('a').removeClass('active')
             let num = $(this).index()
             $('.tab-content .item').eq(num).addClass('active').siblings().removeClass('active')
-            
         })
     </script>
 </body>
