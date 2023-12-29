@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <style>
+        p{
+            width: 200px;
+            font-size: 20px;
+            color: red;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded',function(){
+            //text()方法
+            let p = $('.p1')
+            // console.log(p.text());//adaddadadad
+            // p.text('aaaaaaaa')
+
+            //html方法
+            // console.log(p.html());//adaddadadad
+            // p.html('bbbbbb')
+            // p.html('<span style="color: red;">bsdfafas</span>')
+
+            //val方法
+            let input = $('input[value = "kajshd"]')
+            // console.log(input.val());
+            // input.val('asd')
+
+            //attr方法
+            // console.log(p.attr('title'));
+            // p.attr('title','bbb')
+
+            //removeAttr
+            // p.removeAttr('title')
+
+            //prop
+            // console.log($('input[type = "checkbox"]').prop('checked'));
+            // $('input[type = "checkbox"]').prop('checked','true')
+
+            //css
+            // console.log(p.css('width','400px'));
+
+        })
+    </script>
+</head>
+<body>
+    <input type="text" value="kajshd">
+    <input type="checkbox"><input type="checkbox"><input type="checkbox">
+    <p class="p1" title="aaaaa">adaddadadad</p>
+    <script>
+        let p = document.querySelector('.p1')
+        // console.log(p.style.width);
+    </script>
+</body>
+</html>
