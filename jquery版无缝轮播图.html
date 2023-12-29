@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <style>
+        #slider {
+            width: 976px;
+            height: 550px;
+            margin: 0px auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider_box {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: -976px;
+        }
+
+        .slider_box img {
+            width: 976px;
+            height: 550px;
+        }
+
+        button {
+            width: 25px;
+            height: 30px;
+            border: 0px;
+            text-align: center;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, .3);
+            color: #fff;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+
+        .prev {
+            top: 50%;
+            left: 0px;
+            border-radius: 0px 15px 15px 0px;
+        }
+
+        .next {
+            top: 50%;
+            right: 0px;
+            border-radius: 15px 0px 0px 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slider">
+        <div class="slider_box">
+            <a href=""><img src="./images/slider08.jpg" alt=""></a>
+            <a href=""><img src="./images/slider01.jpg" alt=""></a>
+            <a href=""><img src="./images/slider02.jpg" alt=""></a>
+            <a href=""><img src="./images/slider03.jpg" alt=""></a>
+            <a href=""><img src="./images/slider04.jpg" alt=""></a>
+            <a href=""><img src="./images/slider05.jpg" alt=""></a>
+            <a href=""><img src="./images/slider06.jpg" alt=""></a>
+            <a href=""><img src="./images/slider07.jpg" alt=""></a>
+            <a href=""><img src="./images/slider08.jpg" alt=""></a>
+            <a href=""><img src="./images/slider01.jpg" alt=""></a>
+        </div>
+        <button class="next">></button>
+        <button class="prev"><</button>
+    </div>
+    <script>
+        let i = 1;
+        const next = $('.next');
+        const prev = $('.prev');
+        const sliderBox = $('.slider_box')
+        const imgwith = $('.slider_box img')
+        function changimg(){
+            sliderBox.animate({
+                left: -imgwith.width() * i + 'px'
+            }, 100)
+            if (i >= imgwith.length - 1) {
+                sliderBox.animate({
+                    left:-imgwith.width() + 'px'
+                }, 0)
+                i = 1
+            }
+            if (i < 1) {
+                sliderBox.animate({
+                    left: -(imgwith.length - 2) * imgwith.width() + 'px'
+                }, 0)
+                i = imgwith.length - 2
+            }
+        }
+        next.click(function () {
+            i++
+            changimg()
+        })
+        prev.click(function () {
+            i--
+            changimg()
+        })
+    </script>
+</body>
+
+</html>
