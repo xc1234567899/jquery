@@ -134,6 +134,11 @@
             i--
             addClass()
         })
+        items.click(function(){
+            $(this).addClass('active').siblings().removeClass('active')
+            i = $(this).index()
+            sliderImgs.eq(i).fadeIn().siblings().fadeOut()
+        })
         let n ;
         function autoplay(){
             n = setInterval(function(){

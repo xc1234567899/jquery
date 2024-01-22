@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Microsoft YaHei",simSun,"Lucida Grande","Lucida Sans Unicode",Arial;
+    line-height: 170%;
+    font-size: 12px;
+    color: #000;
+    height: 100%;
+    background: #fff;
+    margin: 0 auto!important;
+    max-width: 1920px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.topbar{
+    display: flex;
+    height: 54px;
+    line-height: 54px;
+    position: relative;
+    border-bottom: 1px solid #ececec;;
+}
+.topbar span::before{
+    content: '\e890';
+    font-family: 'iconfont';
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+.topbar_menu{
+    display: block;
+    width: 180px;
+    height: 100%;
+    background-color: #cf1132;
+    color: #fff;
+    text-align: center;
+}
+.logo{
+    display: block;
+    width: 133px;
+    height: 44px;
+    background-image: url('../images/logo_b5525b7.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.NIE_topBar_menu{
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    opacity: .9;
+}
+.NIE_table{
+    width: 1260px;
+    height: 500px;
+    margin: auto;
+    border-top: 1px solid #ececec;
+}
+.NIE_nav{
+    display: flex;
+    justify-content: space-between;
+    background: #f7f7f8;
+    opacity: .9;
+}
+.NIE_nav li{
+    border-right: 1px solid #eee;
+    font-size: 14px;
+    height: 39px;
+    line-height: 39px;
+    color: #bc2e2e;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.NIE_list{
+    display: flex;
+}
+.phone{
+    display: flex;
+}
+.NIE_list th{
+    width: 105px;
+    padding-left: 13px;
+    text-align: left;
+    margin-left: 6px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: #626262;
+    cursor: pointer;
+}
+.NIE_list td{
+    padding-left: 13px;
+    width: 115px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+.NIE-topBar-hot, .NIE-topBar-1st, .NIE-topBar-new{
+    background: url(../images/sprite-w_dd519f4.png) no-repeat;
+}
+.NIE-topBar-hot{
+    background-position: right -144px;
+}
+.NIE-topBar-1st{
+    background-position: right -267px;
+}
+.NIE-topBar-new{
+    background-position: right -206px;
+}

@@ -1,0 +1,321 @@
+{
+    "cityid": "101020200",
+    "date": "2020-07-15",
+    "week": "星期三",
+    "update_time": "10:17",
+    "city": "闵行",
+    "cityEn": "minhang",
+    "country": "中国",
+    "countryEn": "China",
+    "wea": "雨",
+    "wea_img": "yu",
+    "tem": "20",
+    "tem1": "22",
+    "tem2": "20",
+    "win": "东风",
+    "win_speed": "1级",
+    "win_meter": "小于12km/h",
+    "humidity": "100%",
+    "visibility": "2.77km",
+    "pressure": "1006",
+    "rain_pcpn": "2.5",
+    "air": "34",
+    "air_pm25": "15",
+    "air_level": "优",
+    "air_tips": "空气很好，可以外出活动，呼吸新鲜空气，拥抱大自然！",
+    "alarm": {
+        "alarm_type": "暴雨",
+        "alarm_level": "蓝色",
+        "alarm_content": "闵行区气象局2020年07月15日05时31分发布暴雨蓝色预警[Ⅳ级/一般]：受较强的降水云团影响，预计未来6小时内全区累积降水量将达50毫米以上，请注意防范。（预警信息来源：国家预警信息发布中心）"
+    },
+    "wea_day": "大雨",
+    "wea_day_img": "yu",
+    "wea_night": "小雨",
+    "wea_night_img": "yu",
+    "sunrise": "05:00",
+    "sunset": "19:00",
+    "hours": [
+        {
+            "hours": "现在",
+            "wea": "中雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东风",
+            "win_speed": "3级",
+            "vis": "15.2",
+            "aqi": "优"
+        },
+        {
+            "hours": "11:00",
+            "wea": "中雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东风",
+            "win_speed": "3级",
+            "vis": "15",
+            "aqi": "优"
+        },
+        {
+            "hours": "12:00",
+            "wea": "中雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东风",
+            "win_speed": "3级",
+            "vis": "14",
+            "aqi": "优"
+        },
+        {
+            "hours": "13:00",
+            "wea": "中雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东北风",
+            "win_speed": "1级",
+            "vis": "16",
+            "aqi": "优"
+        },
+        {
+            "hours": "14:00",
+            "wea": "中雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东北风",
+            "win_speed": "2级",
+            "vis": "16",
+            "aqi": "优"
+        },
+        {
+            "hours": "15:00",
+            "wea": "小雨",
+            "wea_img": "yu",
+            "tem": "22",
+            "win": "东北风",
+            "win_speed": "2级",
+            "vis": "16",
+            "aqi": "优"
+        },
+        {
+            "hours": "16:00",
+            "wea": "小雨",
+            "wea_img": "yu",
+            "tem": "22",
+            "win": "东北风",
+            "win_speed": "3级",
+            "vis": "16",
+            "aqi": "优"
+        },
+        {
+            "hours": "17:00",
+            "wea": "小雨",
+            "wea_img": "yu",
+            "tem": "22",
+            "win": "东风",
+            "win_speed": "3级",
+            "vis": "16",
+            "aqi": "优"
+        },
+        {
+            "hours": "18:00",
+            "wea": "中雨",
+            "wea_img": "yu",
+            "tem": "22",
+            "win": "东风",
+            "win_speed": "2级",
+            "vis": "16",
+            "aqi": "优"
+        },
+        {
+            "hours": "19:00",
+            "wea": "中雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东风",
+            "win_speed": "2级",
+            "vis": "16",
+            "aqi": "优"
+        },
+        {
+            "hours": "20:00",
+            "wea": "中雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东风",
+            "win_speed": "2级",
+            "vis": "16",
+            "aqi": "优"
+        },
+        {
+            "hours": "21:00",
+            "wea": "小雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东风",
+            "win_speed": "2级",
+            "aqi": "优"
+        },
+        {
+            "hours": "22:00",
+            "wea": "小雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东风",
+            "win_speed": "2级",
+            "aqi": "优"
+        },
+        {
+            "hours": "23:00",
+            "wea": "小雨",
+            "wea_img": "yu",
+            "tem": "21",
+            "win": "东风",
+            "win_speed": "2级",
+            "aqi": "优"
+        },
+        {
+            "hours": "07/16",
+            "wea": "多云",
+            "wea_img": "yun",
+            "tem": "23",
+            "win": "东风",
+            "win_speed": "2级",
+            "aqi": "优"
+        },
+        {
+            "hours": "01:00",
+            "wea": "多云",
+            "wea_img": "yun",
+            "tem": "23",
+            "win": "东风",
+            "win_speed": "2级",
+            "aqi": "优"
+        },
+        {
+            "hours": "02:00",
+            "wea": "晴",
+            "wea_img": "qing",
+            "tem": "23",
+            "win": "东北风",
+            "win_speed": "2级",
+            "aqi": "优"
+        },
+        {
+            "hours": "03:00",
+            "wea": "晴",
+            "wea_img": "qing",
+            "tem": "23",
+            "win": "东北风",
+            "win_speed": "2级",
+            "aqi": "优"
+        },
+        {
+            "hours": "04:00",
+            "wea": "多云",
+            "wea_img": "yun",
+            "tem": "23",
+            "win": "东北风",
+            "win_speed": "2级",
+            "aqi": "优"
+        },
+        {
+            "hours": "05:00",
+            "wea": "多云",
+            "wea_img": "yun",
+            "tem": "23",
+            "win": "东风",
+            "win_speed": "3级",
+            "aqi": "优"
+        },
+        {
+            "hours": "06:00",
+            "wea": "小雨",
+            "wea_img": "yu",
+            "tem": "23",
+            "win": "东北风",
+            "win_speed": "3级",
+            "aqi": "优"
+        },
+        {
+            "hours": "07:00",
+            "wea": "小雨",
+            "wea_img": "yu",
+            "tem": "23",
+            "win": "东风",
+            "win_speed": "3级",
+            "aqi": "优"
+        },
+        {
+            "hours": "08:00",
+            "wea": "小雨",
+            "wea_img": "yu",
+            "tem": "23",
+            "win": "东北风",
+            "win_speed": "3级",
+            "aqi": "优"
+        }
+    ],
+    "aqi": {
+        "air": "34",
+        "air_level": "优",
+        "air_tips": "空气很好，可以外出活动，呼吸新鲜空气，拥抱大自然！",
+        "pm25": "15",
+        "pm25_desc": "优",
+        "pm10": "12",
+        "pm10_desc": "优",
+        "o3": "59",
+        "o3_desc": "优",
+        "no2": "38",
+        "no2_desc": "优",
+        "so2": "3",
+        "so2_desc": "优",
+        "co": "1",
+        "co_desc": "优",
+        "kouzhao": "无需戴口罩",
+        "waichu": "适宜外出",
+        "yundong": "适宜运动",
+        "kaichuang": "适宜开窗",
+        "jinghuaqi": "关闭净化器"
+    },
+    "zhishu": {
+        "chuanyi": {
+            "level": "天气舒适",
+            "tips": "建议穿长袖牛仔裤等服装。"
+        },
+        "daisan": {
+            "level": "建议带伞",
+            "tips": "短时外出可以不带伞。"
+        },
+        "ganmao": {
+            "level": "较易发感冒",
+            "tips": "体质较弱的朋友需注意防护。"
+        },
+        "chenlian": {
+            "level": "不宜晨练",
+            "tips": "天气条件较不宜晨练。"
+        },
+        "ziwaixian": {
+            "level": "紫外线很弱",
+            "tips": "您无需担心紫外线。"
+        },
+        "liangshai": {
+            "level": "不适宜晾晒",
+            "tips": "天气不好，不适宜晾晒。"
+        },
+        "kaiche": {
+            "level": "较适宜开车",
+            "tips": "天气一般，请小心驾驶。"
+        },
+        "xiche": {
+            "level": "不宜洗车",
+            "tips": "泥水可能会弄脏您的爱车。"
+        },
+        "lvyou": {
+            "level": "不适宜旅游",
+            "tips": "天气很差，不适宜旅游。"
+        },
+        "diaoyu": {
+            "level": "不适宜钓鱼",
+            "tips": "气象条件不利于钓鱼。"
+        }
+    }
+}

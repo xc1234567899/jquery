@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.3/jquery.js"></script>
+</head>
+<body>
+    <script>
+        // $.get("http://localhost:3000/gettest",{uname:'张大炮',age:30},function(res){
+        //     console.log(res);
+        // })
+        $.ajax({
+            url:'http://localhost:3000/posttest',
+            type:'post',
+            contentType:"application/json",
+            data:JSON.stringify({
+            uname:'snake',
+            age:20
+            }),
+            success(res){
+                console.log(res);
+            },
+            error(){
+
+            }
+        })
+    </script>
+</body>
+</html>

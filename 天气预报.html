@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4414793_du8bqo2q93n.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <style>
+        a:hover{
+            text-decoration: none;
+        }
+        .weather {
+            display: flex;
+            justify-content: space-between;
+            background: url(https://weather.cma.cn/assets/cma/img/index_mycity_bg.png) no-repeat center;
+            width: 1170px;
+            height: 280px;
+            margin: 10px auto;
+            color: #fff;
+            background-size: cover;
+        }
+        .city{
+            width: 360px;
+            height: 100%;
+            padding: 0px 15px;
+        }
+        .city_name{
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+        }
+        .city_name .left{
+            height: 60px;
+            padding: 0px 15px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 60px;
+        }
+        .city_name .right{
+            height: 60px;
+            padding: 0px 15px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 60px;
+        }
+        .city_name span{
+            margin-right: 5px;
+            vertical-align: text-top;
+        }
+        .tem{
+            height: 110px;
+            text-align: center;
+            line-height: 110px;
+            font-size: 76px;
+            font-weight: 200;
+            position: relative;
+        }
+        .tem span{
+            position: absolute;
+            font-size: 24px;
+            right: 75px;
+            top: -20px;
+        }
+        .city_detail{
+            display: flex;
+            padding: 0px 30px;
+            height: 110px;
+        }
+        .city_detail div{
+            flex: 1;
+            text-align: center;
+        }
+        .city_detail p{
+            height: 25px;
+            line-height: 25px;
+        }
+        .days{
+            display: flex;
+            width: 780px;
+            height: 100%;
+        }
+        .days p{
+            margin-bottom: 6px;
+        }
+        .days div{
+            border: 1px solid rgba(255,255,255,0.1);
+            padding-top: 8px;
+            font-size: 16px;
+            text-align: center;
+            flex: 1;
+        }
+        .days div:hover{
+            background-image: url('https://weather.cma.cn/assets/cma/img/my_city_today.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .iconfont{
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="weather">
+        <div class="city">
+            <div class="city_name">
+                <a class="left"><span class="glyphicon glyphicon-map-marker"></span>西安</a>
+                <div class="right"><span class="glyphicon glyphicon-time"></span>16:15</div>
+            </div>
+            <div class="tem">1.7 <span>°C</span></div>
+            <div class="city_detail">
+                <div>
+                    <p class="glyphicon glyphicon-tint"></p>
+                    <p>降水</p>
+                    <p class="rain">0mm</p>
+                </div>
+                <div>
+                    <p class="glyphicon glyphicon-plane"></p>
+                    <p class="win">东南风</p>
+                    <p>微风</p>
+                </div>
+                <div>
+                    <p class="glyphicon glyphicon-tint"></p>
+                    <p>相对湿度</p>
+                    <p class="humidity">87%</p>
+                </div>
+                <div>
+                    <p class="glyphicon glyphicon-dashboard"></p>
+                    <p>气压</p>
+                    <p class="pressure">975hpa</p>
+                </div>
+            </div>
+        </div>
+        <div class="days">
+            <div style="background: url('https://weather.cma.cn/assets/cma/img/my_city_today.png') no-repeat; background-size: cover;">
+                <p>今天</p>
+                <p class="date">01/17</p>
+                <p class="iconfont icon-yun"></p>
+                <p class="iconfont icon-yun"></p>
+                <p><span class="min_tem">6°C</span>/<span class="max_tem">11°C</span></p>
+                <p class="wea">阴</p>
+                <p>微风</p>
+            </div>
+            <div>
+                <p>今天</p>
+                <p>01/17</p>
+                <p class="iconfont icon-yun"></p>
+                <p class="iconfont icon-yun"></p>
+                <p><span class="min_tem">6°C</span>/<span class="max_tem">11°C</span></p>
+                <p>阴</p>
+                <p>微风</p>
+            </div>
+            <div>
+                <p>今天</p>
+                <p>01/17</p>
+                <p class="iconfont icon-yun"></p>
+                <p class="iconfont icon-yun"></p>
+                <p><span class="min_tem">6°C</span>/<span class="max_tem">11°C</span></p>
+                <p>阴</p>
+                <p>微风</p>
+            </div>
+            <div>
+                <p>今天</p>
+                <p>01/17</p>
+                <p class="iconfont icon-yun"></p>
+                <p class="iconfont icon-yun"></p>
+                <p><span class="min_tem">6°C</span>/<span class="max_tem">11°C</span></p>
+                <p>阴</p>
+                <p>微风</p>
+            </div>
+            <div>
+                <p>今天</p>
+                <p>01/17</p>
+                <p class="iconfont icon-yun"></p>
+                <p class="iconfont icon-yun"></p>
+                <p><span class="min_tem">6°C</span>/<span class="max_tem">11°C</span></p>
+                <p>阴</p>
+                <p>微风</p>
+            </div>
+            <div>
+                <p>今天</p>
+                <p>01/17</p>
+                <p class="iconfont icon-yun"></p>
+                <p class="iconfont icon-yun"></p>
+                <p><span class="min_tem">6°C</span>/<span class="max_tem">11°C</span></p>
+                <p>阴</p>
+                <p>微风</p>
+            </div>
+            <div>
+                <p>今天</p>
+                <p>01/17</p>
+                <p class="iconfont icon-yun"></p>
+                <p class="iconfont icon-yun"></p>
+                <p><span class="min_tem">6°C</span>/<span class="max_tem">11°C</span></p>
+                <p>阴</p>
+                <p>微风</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $.get('http://v1.yiketianqi.com/api',{
+            version:'v62',
+            appid:15721273,
+            appsecret:'3eMH2oKY'
+        },function(res){
+            console.log(res);
+            $('.city_name a').html('<span class="glyphicon glyphicon-map-marker"></span>'+res.city)
+            $('.city_name .right').html('<span class="glyphicon glyphicon-time"></span>'+res.update_time)
+            $('.tem').html(res.tem +'<span>°C</span>')
+            $('.rain').html(res.rain_pcpn+'mm')
+            $('.win').html(res.win)
+            $('.humidity').html(res.humidity)
+            $('.pressure').html(res.pressure+'hpa')
+            $('.wea').html(res.wea)
+            $('.min_tem').html(res.tem2+'°C')
+            $('.max_tem').html(res.tem1+'°C')
+            $('.date').html((new Date().getMonth()+1)+'/'+new Date().getDate())
+        })
+    </script>
+</body>
+
+</html>

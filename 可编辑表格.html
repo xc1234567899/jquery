@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <style>
+        .info {
+            width: 1100px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 5px 15px 13px 15px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+        }
+
+        .btns {
+            padding: 10px 0px;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn-primary {
+            background-color: #1c84c6;
+            border-color: #1c84c6;
+        }
+
+        .btn-primary:hover {
+            background-color: #1a7bb9;
+            border-color: #1a7bb9;
+        }
+
+        .btn-success {
+            background-color: #1dc5a3;
+            border-color: #1dc5a3;
+        }
+
+        .btn-success:hover {
+            background-color: #1dc5a3;
+            border-color: #1dc5a3;
+        }
+
+        .btn-danger {
+            background-color: #ef6776;
+            border-color: #ef6776;
+        }
+
+        .btn-danger:hover {
+            background-color: #ec4758;
+            border-color: #ec4758;
+        }
+
+        .btn-info {
+            background-color: #23c6c8;
+            border-color: #23c6c8;
+        }
+
+        .btn-info:hover {
+            background-color: #21b9bb;
+            border-color: #21b9bb;
+        }
+
+        .btn-warning {
+            background-color: #f8ac59;
+            border-color: #f8ac59;
+        }
+
+        .btn-warning:hover {
+            background-color: #f7a54a;
+            border-color: #f7a54a;
+        }
+
+        .btn .caret {
+            margin-left: 5px;
+        }
+
+        .table>tbody>tr>th {
+            border-top: 0px;
+        }
+
+        .table>tbody>tr>td {
+            vertical-align: middle;
+        }
+
+        .table-hover>tbody>.thead:hover {
+            background-color: #fff;
+        }
+
+        .remove {
+            background-color: #ed5565;
+            border-color: #ed5565;
+            font-size: 12px;
+            padding: 3px 6px;
+        }
+
+        .addUser {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 999;
+            top: 0px;
+            left: 0px;
+            display: none;
+        }
+
+        .addUser_table {
+            width: 660px;
+            height: 285px;
+            padding: 30px 20px;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 999;
+        }
+
+        .addUser_table label {
+            width: 70px;
+            text-align: right;
+        }
+
+        .addUser_table p {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .addUser_table input {
+            width: 300px;
+            margin-left: 30px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            outline: none;
+        }
+
+        .sure {
+            margin-right: 165px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="info">
+        <div class="btns">
+            <div class="left">
+                <button type="button" class="btn btn-primary add">新增</button>
+                <button type="button" class="btn btn-success rev">修改</button>
+                <button type="button" class="btn btn-danger del">删除</button>
+                <button type="button" class="btn btn-info">导入</button>
+                <button type="button" class="btn btn-warning">导出</button>
+            </div>
+            <div class="right">
+                <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-refresh"></span></button>
+                <button class="btn btn-default" type="submit"><span
+                        class="glyphicon glyphicon-list-alt icon-list-alt"></span></button>
+                <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-th icon-th"></span><span
+                        class="caret"></span></button>
+            </div>
+        </div>
+        <table class="table table-hover">
+            <tr class="thead">
+                <th><input type="checkbox" class="checkAll"></th>
+                <th>用户id</th>
+                <th>登录名称<span></span></th>
+                <th>用户名称</th>
+                <th>部门</th>
+                <th>手机号</th>
+                <th>创建日期</th>
+                <th>操作</th>
+            </tr>
+        </table>
+    </form>
+    <div class="addUser">
+        <div class="addUser_table">
+            <p>
+                <label for="">登录名称：</label>
+                <input type="text" placeholder="请输入登录名称" class="loginName">
+            </p>
+            <p>
+                <label for="">用户名称：</label>
+                <input type="text" placeholder="请输入用户名称" class="uname">
+            </p>
+            <p>
+                <label for="">部门：</label>
+                <input type="text" placeholder="请输入部门名称" class="deptName">
+            </p>
+            <p>
+                <label for="">手机：</label>
+                <input type="text" placeholder="请输入手机号" class="phone">
+            </p>
+            <p class="">
+                <button type="button" class="btn btn-success sure">确定</button>
+                <button type="button" class="btn btn-danger cancel">取消</button>
+            </p>
+        </div>
+    </div>
+    <script>
+        const userData = JSON.parse(localStorage.getItem('data')) || []
+        function render(arr) {
+            $('.thead').siblings().remove()
+            $.each(userData, function (item, value) {
+                let tr = $(`
+                <tr>
+                    <td><input type="checkbox" class="ck"></td>
+                    <td>${value.userId}</td>
+                    <td>${value.loginName}</td>
+                    <td>${value.uname}</td>
+                    <td>${value.deptName}</td>
+                    <td>${value.phone}</td>
+                    <td>${new Date().toLocaleString()}</td>
+                    <td><button type="button" class="btn btn-danger remove" data-id='${item}'>删除</button></td>
+                </tr>
+                `)
+                $('.table').append(tr)
+            })
+        }
+        render(userData)
+        $('.add').click(function () {
+            $('.addUser').css('display', 'block')
+        })
+        $('.cancel').click(function () {
+            $('.addUser').css('display', 'none')
+        })
+        $('.sure').click(function () {
+            const obj = {
+                userId: userData.length + 1,
+                loginName: $('.loginName').val(),
+                uname: $('.uname').val(),
+                deptName: $('.deptName').val(),
+                phone: $('.phone').val(),
+            }
+            userData.push(obj)
+            $('input[type="text"]').val('')
+            $('.addUser').css('display', 'none')
+            render()
+            localStorage.setItem('data', JSON.stringify(userData))
+        })
+        $('.table').on('click', '.remove', function (e) {
+            userData.splice(e.target.dataset.id, 1)
+            render()
+            localStorage.setItem('data', JSON.stringify(userData))
+        })
+        $('.checkAll').click(function(){;
+            $('.check').prop('checked',$(this).prop('checked'))
+        })
+        $('.ck').click(function(){
+            $('.checkAll').prop('checked',$('.ck:checked').length === $('.ck').length)
+        })
+        
+    </script>
+</body>
+
+</html>
